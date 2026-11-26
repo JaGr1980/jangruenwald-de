@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Jan Grünwald - g-tools</title>
+  <title>Jan Grünwald - G-Tools</title>
   <link rel="icon" type="image/png" href="../favicon.png">
   <style>
     html, body {
@@ -28,12 +28,23 @@
     }
 
     h1 {
-      margin: 0 0 1rem;
-      color: #FF9800;
-      font-size: clamp(2rem, 6vw, 3.25rem);
-      font-weight: 650;
-      letter-spacing: -0.03em;
-      line-height: 1.1;
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    .logo {
+      display: block;
+      width: 280px;
+      max-width: 100%;
+      height: auto;
+      margin: 0 auto 1.25rem;
     }
 
     h2 {
@@ -89,14 +100,24 @@
     a:focus {
       text-decoration: underline;
     }
+
+    .app-icon {
+      display: block;
+      width: 160px;
+      max-width: 160px;
+      height: auto;
+      margin: 0 auto 0.75rem;
+    }
   </style>
 </head>
 <body>
   <main>
-    <h1>g-tools</h1>
+    <img class="logo" src="G-Tools.png" alt="G-Tools" width="280">
+    <h1>G-Tools</h1>
     <p class="lead">Apps von Jan Grünwald.</p>
 
     <section>
+      <img class="app-icon" src="GymTimer.png" alt="GymTimer" width="160">
       <h2>GymTimer</h2>
       <p>Trainings-Timer.</p>
       <p class="note">Werbevideo und Store-Links folgen.</p>
@@ -107,6 +128,7 @@
     </section>
 
     <section>
+      <img class="app-icon" src="NutriTimer.png" alt="NutriTimer" width="160">
       <h2>NutriTimer</h2>
       <p>NutriTimer erweitert Open Food Facts nur lesend, privat pro Konto.</p>
       <p class="note">Werbevideo und Store-Links folgen.</p>
